@@ -1,0 +1,239 @@
+CRITICAL - 2023-10-19 15:24:40 --> Invalid file: "akademik/v_perkuliahan_add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akademik/v_perkuliahan_add.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('akademik/v_perkuliahan_add', [], true)
+ 3 APPPATH\Views\template.php(43): view('akademik/v_perkuliahan_add')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Akademik.php(29): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->add()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 15:54:12 --> Cannot use object of type stdClass as array
+in APPPATH\Views\perkuliahan\v_perkuliahan.php on line 44.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('perkuliahan/v_perkuliahan', [], true)
+ 4 APPPATH\Views\template.php(43): view('perkuliahan/v_perkuliahan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH\Controllers\Akademik.php(17): view('template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 15:54:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\perkuliahan\v_perkuliahan.php on line 45.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('perkuliahan/v_perkuliahan', [], true)
+ 4 APPPATH\Views\template.php(43): view('perkuliahan/v_perkuliahan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH\Controllers\Akademik.php(17): view('template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 15:56:01 --> Undefined property: stdClass::$id_data
+in APPPATH\Views\perkuliahan\v_perkuliahan.php on line 45.
+ 1 APPPATH\Views\perkuliahan\v_perkuliahan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_data', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\perkuliahan\\v_perkuliahan.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\perkuliahan\\v_perkuliahan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('perkuliahan/v_perkuliahan', [], true)
+ 5 APPPATH\Views\template.php(43): view('perkuliahan/v_perkuliahan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Akademik.php(17): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 15:56:02 --> Undefined property: stdClass::$id_data
+in APPPATH\Views\perkuliahan\v_perkuliahan.php on line 45.
+ 1 APPPATH\Views\perkuliahan\v_perkuliahan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_data', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\perkuliahan\\v_perkuliahan.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\perkuliahan\\v_perkuliahan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('perkuliahan/v_perkuliahan', [], true)
+ 5 APPPATH\Views\template.php(43): view('perkuliahan/v_perkuliahan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Akademik.php(17): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 16:38:45 --> Invalid file: "akademik/v_perkuliahan_edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akademik/v_perkuliahan_edit.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('akademik/v_perkuliahan_edit', [], true)
+ 3 APPPATH\Views\template.php(44): view('akademik/v_perkuliahan_edit')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 7 APPPATH\Controllers\Akademik.php(46): view('template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Akademik->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akademik))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 17:58:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_2` FOREIGN KEY (`kode_mk`) REFERENCES `matakuliah` (`kode_mk`)) in D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ma...', 0)
+#1 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 D:\XAMPP\htdocs\codeigniter\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 D:\XAMPP\htdocs\codeigniter\app\Models\MKModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\XAMPP\htdocs\codeigniter\app\Controllers\MataKuliah.php(45): App\Models\MKModel->deleteData('MG121')
+#6 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(932): App\Controllers\MataKuliah->delete('MG121')
+#7 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+#8 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 17:58:53 --> Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_2` FOREIGN KEY (`kode_mk`) REFERENCES `matakuliah` (`kode_mk`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `matakuliah`
+WHERE `kode_mk` = \'MG121\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `kode_mk` = \'MG121\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `kode_mk` = \'MG121\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `kode_mk` = :kode_mk:', [...], false)
+ 5 APPPATH\Models\MKModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\MataKuliah.php(45): App\Models\MKModel->deleteData('MG121')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MataKuliah->delete('MG121')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 18:27:52 --> Call to undefined function form_open()
+in APPPATH\Views\dosen\v_dosen.php on line 60.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dosen/v_dosen', [], true)
+ 4 APPPATH\Views\template.php(44): view('dosen/v_dosen')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 8 APPPATH\Controllers\Dosen.php(17): view('template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 19:27:36 --> Attempt to read property "nip" on array
+in APPPATH\Views\dosen\v_dosen.php on line 96.
+ 1 APPPATH\Views\dosen\v_dosen.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nip" on array', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dosen/v_dosen', [], true)
+ 5 APPPATH\Views\template.php(44): view('dosen/v_dosen')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dosen.php(18): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 19:44:27 --> Attempt to read property "nip" on array
+in APPPATH\Views\dosen\v_dosen.php on line 96.
+ 1 APPPATH\Views\dosen\v_dosen.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nip" on array', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dosen/v_dosen', [], true)
+ 5 APPPATH\Views\template.php(44): view('dosen/v_dosen')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dosen.php(18): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 19:44:55 --> Attempt to read property "nip" on array
+in APPPATH\Views\dosen\v_dosen.php on line 96.
+ 1 APPPATH\Views\dosen\v_dosen.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nip" on array', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dosen/v_dosen', [], true)
+ 5 APPPATH\Views\template.php(44): view('dosen/v_dosen')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dosen.php(18): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 19:44:57 --> Attempt to read property "nip" on array
+in APPPATH\Views\dosen\v_dosen.php on line 96.
+ 1 APPPATH\Views\dosen\v_dosen.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nip" on array', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php', 96)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\dosen\\v_dosen.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dosen/v_dosen', [], true)
+ 5 APPPATH\Views\template.php(44): view('dosen/v_dosen')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Dosen.php(18): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 19:45:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_3` FOREIGN KEY (`nip`) REFERENCES `dosen` (`nip`)) in D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `do...', 0)
+#1 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 D:\XAMPP\htdocs\codeigniter\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 D:\XAMPP\htdocs\codeigniter\app\Models\DosenModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\XAMPP\htdocs\codeigniter\app\Controllers\Dosen.php(47): App\Models\DosenModel->deleteData('199911112000')
+#6 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(932): App\Controllers\Dosen->delete('199911112000')
+#7 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#8 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 19:45:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_3` FOREIGN KEY (`nip`) REFERENCES `dosen` (`nip`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `dosen`
+WHERE `nip` = \'199911112000\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `dosen`
+WHERE `nip` = \'199911112000\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `dosen`
+WHERE `nip` = \'199911112000\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `dosen`
+WHERE `nip` = :nip:', [...], false)
+ 5 APPPATH\Models\DosenModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\Dosen.php(47): App\Models\DosenModel->deleteData('199911112000')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->delete('199911112000')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 19:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 19:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

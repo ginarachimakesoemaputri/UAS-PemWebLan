@@ -1,0 +1,69 @@
+ERROR - 2023-10-14 08:44:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_3` FOREIGN KEY (`nip`) REFERENCES `dosen` (`nip`)) in D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `do...', 0)
+#1 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 D:\XAMPP\htdocs\codeigniter\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 D:\XAMPP\htdocs\codeigniter\app\Models\DosenModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\XAMPP\htdocs\codeigniter\app\Controllers\Dosen.php(45): App\Models\DosenModel->deleteData('198812102002')
+#6 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(932): App\Controllers\Dosen->delete('198812102002')
+#7 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#8 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-14 08:44:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`akademik_db`.`perkuliahan`, CONSTRAINT `perkuliahan_ibfk_3` FOREIGN KEY (`nip`) REFERENCES `dosen` (`nip`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `dosen`
+WHERE `nip` = \'198812102002\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `dosen`
+WHERE `nip` = \'198812102002\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `dosen`
+WHERE `nip` = \'198812102002\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `dosen`
+WHERE `nip` = :nip:', [...], false)
+ 5 APPPATH\Models\DosenModel.php(44): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\Dosen.php(45): App\Models\DosenModel->deleteData('198812102002')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dosen->delete('198812102002')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-14 09:01:54 --> mysqli_sql_exception: Duplicate entry 'MG127' for key 'PRIMARY' in D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 D:\XAMPP\htdocs\codeigniter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 D:\XAMPP\htdocs\codeigniter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 D:\XAMPP\htdocs\codeigniter\app\Models\MKModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\XAMPP\htdocs\codeigniter\app\Controllers\MataKuliah.php(61): App\Models\MKModel->insertData(Array)
+#6 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(932): App\Controllers\MataKuliah->submit()
+#7 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+#8 D:\XAMPP\htdocs\codeigniter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-14 09:01:54 --> Duplicate entry 'MG127' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `sks`) VALUES (\'MG127\', \'Bahasa Indonesia\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `sks`) VALUES (\'MG127\', \'Bahasa Indonesia\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `sks`) VALUES (\'MG127\', \'Bahasa Indonesia\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `sks`) VALUES (:kode_mk:, :nama_mk:, :sks:)', [...], false)
+ 5 APPPATH\Models\MKModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\MataKuliah.php(61): App\Models\MKModel->insertData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MataKuliah->submit()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 09:24:33 --> Undefined property: stdClass::$jk
+in APPPATH\Views\mahasiswa\v_mahasiswa_edit.php on line 16.
+ 1 APPPATH\Views\mahasiswa\v_mahasiswa_edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jk', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\mahasiswa\\v_mahasiswa_edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\mahasiswa\\v_mahasiswa_edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('mahasiswa/v_mahasiswa_edit', [], true)
+ 5 APPPATH\Views\template.php(43): view('mahasiswa/v_mahasiswa_edit')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('template', [], true)
+ 9 APPPATH\Controllers\Mahasiswa.php(41): view('template', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Mahasiswa->edit('123456788')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

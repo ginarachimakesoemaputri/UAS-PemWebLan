@@ -1,0 +1,865 @@
+CRITICAL - 2024-01-04 16:42:07 --> Attempt to read property "password" on array
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'D:\\XAMPP\\htdocs\\pemweblan\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->cek()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:42:36 --> Attempt to read property "password" on array
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'D:\\XAMPP\\htdocs\\pemweblan\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->cek()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:46:41 --> Attempt to read property "password" on array
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'D:\\XAMPP\\htdocs\\pemweblan\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->cek()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 16:52:31 --> mysqli_sql_exception: Table 'db_sneat.account' doesn't exist in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\XAMPP\htdocs\pemweblan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\XAMPP\htdocs\pemweblan\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP\htdocs\pemweblan\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 'gina')
+#6 D:\XAMPP\htdocs\pemweblan\app\Controllers\Login.php(18): CodeIgniter\BaseModel->find('gina')
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Login->cek()
+#8 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-04 16:52:31 --> Table 'db_sneat.account' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `account`
+WHERE `account`.`username` = \'gina\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `account`
+WHERE `account`.`username` = \'gina\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `account`
+WHERE `account`.`username` = \'gina\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `account`
+WHERE `account`.`username` = :account.username:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, 'gina')
+ 7 APPPATH\Controllers\Login.php(18): CodeIgniter\BaseModel->find('gina')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->cek()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 17:06:24 --> mysqli_sql_exception: Table 'dbpetshop.user' doesn't exist in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(67): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(42): App\Libraries\DataTables->BuildDatatables('SELECT * FROM u...', NULL, NULL, 'username LIKE '...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 17:06:24 --> Table 'dbpetshop.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM user', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM user')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM user')
+ 4 APPPATH\Libraries\DataTables.php(67): CodeIgniter\Database\BaseConnection->query('SELECT * FROM user')
+ 5 APPPATH\Controllers\Home.php(42): App\Libraries\DataTables->BuildDatatables('SELECT * FROM user', null, null, 'username LIKE \'%%\' OR password LIKE \'%%\' OR nama LIKE \'%%\' OR role LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 17:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 17:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 17:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 17:21:18 --> mysqli_sql_exception: Table 'dbpetshop.user' doesn't exist in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(67): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(42): App\Libraries\DataTables->BuildDatatables('SELECT * FROM u...', NULL, NULL, 'username LIKE '...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 17:21:18 --> Table 'dbpetshop.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM user', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM user')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM user')
+ 4 APPPATH\Libraries\DataTables.php(67): CodeIgniter\Database\BaseConnection->query('SELECT * FROM user')
+ 5 APPPATH\Controllers\Home.php(42): App\Libraries\DataTables->BuildDatatables('SELECT * FROM user', null, null, 'username LIKE \'%%\' OR password LIKE \'%%\' OR nama LIKE \'%%\' OR role LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 17:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 17:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 17:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 18:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 19:40:42 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 19:40:45 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 19:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 19:40:56 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 19:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 19:41:14 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 19:41:15 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 19:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 19:41:51 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 19:42:09 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('', false)
+ 3 APPPATH\Controllers\Home.php(96): CodeIgniter\BaseModel->delete('')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 19:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 19:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 20:15:58 --> Invalid file: "Home/table_barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home/table_barang.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Home/table_barang', [], true)
+ 3 APPPATH\Controllers\Home.php(27): view('Home/table_barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 20:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 20:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 21:01:49 --> Call to undefined method App\Models\TransaksiModel::getData
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->__call('getData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainindex()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 21:01:58 --> Call to undefined method App\Models\TransaksiModel::getData
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->__call('getData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainindex()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-04 21:02:01 --> Call to undefined method App\Models\TransaksiModel::getData
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->__call('getData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainindex()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 21:19:14 --> mysqli_sql_exception: Duplicate entry 'W12' for key 'PRIMARY' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ba...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 D:\XAMPP\htdocs\pemweblan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 D:\XAMPP\htdocs\pemweblan\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP\htdocs\pemweblan\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP\htdocs\pemweblan\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(212): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainSave()
+#9 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-04 21:19:14 --> Duplicate entry 'W12' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (:id:, :jumlah:, :keterangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainSave()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 21:19:21 --> mysqli_sql_exception: Duplicate entry 'W12' for key 'PRIMARY' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ba...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 D:\XAMPP\htdocs\pemweblan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 D:\XAMPP\htdocs\pemweblan\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP\htdocs\pemweblan\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP\htdocs\pemweblan\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(212): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainSave()
+#9 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-04 21:19:21 --> Duplicate entry 'W12' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (\'W12\', \'1\', \'bks\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`id`, `jumlah`, `keterangan`) VALUES (:id:, :jumlah:, :keterangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainSave()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 21:40:34 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 21:40:34 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 21:40:57 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 21:40:57 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 21:41:54 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 21:41:54 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 21:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 21:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:16:01 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:16:01 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(73): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:17:18 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(72): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:17:18 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(72): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:18:27 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:18:27 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:18:33 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:18:33 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:18:36 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaks...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(72): App\Libraries\DataTables->BuildDatatables('SELECT transaks...', NULL, NULL, 'id_transaksi LI...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:18:36 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id WHERE (id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\') ORDER BY id asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(72): App\Libraries\DataTables->BuildDatatables('SELECT transaksi_keluar.id_transaksi, barang.nama, transaksi_keluar.jumlah, transaksi_keluar.keterangan, transaksi_keluar.tanggal_transaksi, transaksi_keluar.total FROM transaksi_keluar INNER JOIN barang ON transaksi_keluar.id = barang.id', null, null, 'id_transaksi LIKE \'%%\' OR nama LIKE \'%%\' OR tanggal_transaksi LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->mainGrid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:18:38 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:18:38 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:20:34 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:20:34 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:20:38 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:20:38 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:20:43 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:20:43 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:20:55 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:20:55 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:23:29 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:23:29 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:25:15 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:25:15 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-04 22:25:38 --> mysqli_sql_exception: Unknown column 'id_transaksi' in 'order clause' in D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\XAMPP\htdocs\pemweblan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM b...', 0)
+#1 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 D:\XAMPP\htdocs\pemweblan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 D:\XAMPP\htdocs\pemweblan\app\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\XAMPP\htdocs\pemweblan\app\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM b...', NULL, NULL, 'id LIKE '%%' OR...')
+#5 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(932): App\Controllers\Home->grid()
+#6 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP\htdocs\pemweblan\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\pemweblan\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 22:25:38 --> Unknown column 'id_transaksi' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 4 APPPATH\Libraries\DataTables.php(75): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang WHERE (id LIKE \'%%\' OR nama LIKE \'%%\') ORDER BY id_transaksi asc LIMIT 10 OFFSET 0')
+ 5 APPPATH\Controllers\Home.php(63): App\Libraries\DataTables->BuildDatatables('SELECT * FROM barang', null, null, 'id LIKE \'%%\' OR nama LIKE \'%%\'')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->grid()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-04 22:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 22:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-04 23:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

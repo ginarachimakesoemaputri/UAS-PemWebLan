@@ -1,0 +1,62 @@
+CRITICAL - 2023-09-01 02:17:15 --> Undefined variable $data
+in APPPATH\Views\v_student.php on line 10.
+ 1 APPPATH\Views\v_student.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 5 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-01 02:21:18 --> Undefined variable $nim
+in APPPATH\Views\v_student.php on line 10.
+ 1 APPPATH\Views\v_student.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 5 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-01 02:23:12 --> Undefined variable $nim
+in APPPATH\Views\v_student.php on line 11.
+ 1 APPPATH\Views\v_student.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 5 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-01 02:24:27 --> Array to string conversion
+in APPPATH\Views\v_student.php on line 12.
+ 1 APPPATH\Views\v_student.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\XAMPP\\htdocs\\codeigniter\\app\\Views\\v_student.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 5 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-01 02:24:45 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Views\v_student.php on line 12.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 3 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-01 02:29:14 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Views\v_student.php on line 14.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('v_student', [], true)
+ 3 APPPATH\Controllers\Student.php(12): view('v_student', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Student->table()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

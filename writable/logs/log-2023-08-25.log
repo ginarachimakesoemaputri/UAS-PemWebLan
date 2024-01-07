@@ -1,0 +1,61 @@
+CRITICAL - 2023-08-25 03:19:41 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-25 03:19:56 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-25 02:14:08 --> Undefined variable $routes
+in APPPATH\Controllers\Blog.php on line 10.
+ 1 APPPATH\Controllers\Blog.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php', 10)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Blog')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Blog')
+ 6 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Blog', true)
+ 7 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:14:59 --> Invalid file: "BlogView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('BlogView.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('BlogView', [], true)
+ 3 APPPATH\Controllers\Blog.php(7): view('BlogView')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:15:51 --> Undefined variable $routes
+in APPPATH\Controllers\Blog.php on line 10.
+ 1 APPPATH\Controllers\Blog.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php', 10)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Blog')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Blog')
+ 6 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Blog', true)
+ 7 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:16:01 --> Undefined variable $routes
+in APPPATH\Controllers\Blog.php on line 10.
+ 1 APPPATH\Controllers\Blog.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php', 10)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\XAMPP\\htdocs\\codeigniter\\app\\Controllers\\Blog.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Blog')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Blog')
+ 6 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Blog', true)
+ 7 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:16:58 --> Invalid file: "BlogView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('BlogView.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('BlogView', [], true)
+ 3 APPPATH\Controllers\Blog.php(7): view('BlogView')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
